@@ -1,7 +1,8 @@
 import xcc.*
 //@Grab(group='org.ccil.cowan.tagsoup', module='tagsoup', version='1.2' )
-@Grab(group='com.fasterxml.jackson.core', module='jackson-core', version='2.7.0')
-@Grab(group='com.fasterxml.jackson.core', module='jackson-databind', version='2.7.0')
+
+//@Grab(group='com.fasterxml.jackson.core', module='jackson-core', version='2.7.0')
+//@Grab(group='com.fasterxml.jackson.core', module='jackson-databind', version='2.7.0')
 
 def tagsoupParser = new org.ccil.cowan.tagsoup.Parser()
 
