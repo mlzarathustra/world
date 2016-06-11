@@ -12,6 +12,7 @@ dst.mkdirs()
 src.eachFile { file ->
     if (file.isDirectory()) return
     def xml = slurper.parse(file)
+    if (! (file.name =~ /.html/)) return
     println file.name
     File dstFile=new File(dst,file.name.replaceFirst(/\.html/,'.xml'))
     dstFile.write( groovy.xml.XmlUtil.serialize(xml), 'utf-8'  )
