@@ -1,0 +1,35 @@
+
+* getAbbrevs.groovy - got tagsoup working
+* genXmlFiles.groovy
+* used xmlstarlet to spot-check for validity
+
+* set up ML 8050 and 8053 servers
+* added default pages
+
+* added XccConn
+* configured xq.properties
+
+* uploadIndex.groovy - had to add jackson libraries (via @Grab from
+  central Maven repository, using the version recommended by
+  the Jackson main site (as given in the ML XCC docs)
+  https://github.com/FasterXML/jackson
+
+* uploadRaw.groovy - all the HTML docs as XML
+
+XCQ:
+* used XCQ to test using code in xquery/test
+
+DEMO:
+* demo/list.xqy (lists country names and abbrevs)
+* demo/raw.xqy - extracts population and area for a given country
+* separated functions into lib/world.xqy
+* demo/table.xqy - aggregates all the countries into a single table;
+    shows density
+
+API:
+* api/table.xqy - same data as DEMO, but tagged in XML
+
+
+* uploadTable - uploaded API data as static XML
+* demo/sort.xqy
+
