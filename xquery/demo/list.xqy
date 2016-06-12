@@ -1,16 +1,17 @@
 
 let $x := xdmp:set-response-content-type('html')
-let $title := 'world factbook index'
+let $title := 'DEMO - world factbook index'
 
 return 
 <html><head><title>{$title}</title></head>
 <body>
 <h2>{$title}</h2>
+{
+for $c in /index/country
+return <div><a href='raw.xqy?abbrev={$c/@abbrev}'>{$c/name}</a></div>
 
-<a href='list.xqy'>list with links</a>
-<br/> <br/>
-<a href='table.xqy'>table</a>
 
 
+}
 </body>
 </html>
