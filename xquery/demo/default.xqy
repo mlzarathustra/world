@@ -10,6 +10,8 @@ return
 <a href='list.xqy'>list with links</a>
 <br/> <br/>
 <a href='table.xqy'>table</a>
+<br/> <br/>
+<a href='sort.xqy'>sortable table</a>
 
 
 </body>

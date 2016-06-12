@@ -7,6 +7,7 @@ return
 <body>
 <h2>{$title}</h2>
 
+<a href='table.xqy'>table</a>
 
 
 </body>
